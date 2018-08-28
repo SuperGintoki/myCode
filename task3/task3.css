@@ -1,0 +1,83 @@
+/*重设body的样式*/
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #68cdd5;
+	text-align: center;   /*使页面中的文字和图片自动居中*/
+}
+
+/*设置根元素的字号*/
+html{
+	font-size: 625%;  
+}
+
+@media screen and (max-width: 425px){
+	html{
+		font-size: 415%;
+	}
+}
+
+@media screen and (max-width: 375px){
+	html{
+		font-size: 366%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	html{
+		font-size: 312.5%;
+	}
+}
+
+/*设置返回箭头图片*/
+.arrow img{
+	width: 0.54rem;
+	height: 0.54rem;
+	display: block;   /*为了去掉img周围的空隙*/
+	margin: 0.2rem 0 0.4rem 0.3rem;
+}
+
+/*设置logo图片*/
+.logo img{
+	width: 1.81rem;
+	height: 0.7rem;
+}
+
+/*设置内容主体部分*/
+.wrapper{
+	width: 80%; 
+	margin: 0.4rem auto;
+	font-size: 0.27rem;
+	text-align: left;  /*中间介绍文字居左*/
+	color: #fff;
+}
+
+/*当屏幕大于1650px时，介绍文字会变为一行，居中显示*/
+@media screen and (min-width: 1650px){
+	.wrapper{
+		text-align: center;
+	}
+}
+
+/*左下方图片*/
+.left{
+	float: left;
+	margin-top: 0.8rem;
+	text-align: center;
+}
+
+/*右下方图片*/
+.right{
+	float: right;
+	margin-top: 0.8rem;
+	text-align: center;
+}
+
+.left img,
+.right img{
+	width: 0.84rem;
+	height: 0.84rem;
+}
+
+
+
