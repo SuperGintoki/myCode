@@ -11,15 +11,33 @@ html{
 	font-size: 625%;  
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 725px){
 	html{
-		font-size: 415%;
+		font-size: 625%;
 	}
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 480px){
 	html{
-		font-size: 366%;
+		font-size: 469%;
+	}
+}
+
+@media screen and (max-width: 440px){
+	html{
+		font-size: 430%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	html{
+		font-size: 390%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	html{
+		font-size: 351.5%;
 	}
 }
 
@@ -34,7 +52,7 @@ html{
 	width: 0.54rem;
 	height: 0.54rem;
 	display: block;   /*为了去掉img周围的空隙*/
-	margin: 0.2rem 0 0.4rem 0.3rem;
+	margin: 0.2rem 0 0.2rem 0.3rem;
 }
 
 /*设置logo图片*/
@@ -45,9 +63,9 @@ html{
 
 /*设置内容主体部分*/
 .wrapper{
-	width: 80%; 
-	margin: 0.4rem auto;
-	font-size: 0.27rem;
+	width: 70%;
+	margin: 0.35rem auto;
+	font-size: 0.25rem;
 	text-align: left;  /*中间介绍文字居左*/
 	color: #fff;
 }
@@ -59,17 +77,24 @@ html{
 	}
 }
 
+/* 为文字介绍部分添加高度，以防文字换行时产生的高度变化挤走下方图片 */
+.content{
+	height: 1rem; 
+}
+
 /*左下方图片*/
 .left{
 	float: left;
-	margin-top: 0.8rem;
+	margin-top: 0.7rem;
+	margin-bottom: 0.8rem;
 	text-align: center;
 }
 
 /*右下方图片*/
 .right{
 	float: right;
-	margin-top: 0.8rem;
+	margin-top: 0.7rem;
+	margin-bottom: 0.8rem;
 	text-align: center;
 }
 
