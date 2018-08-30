@@ -48,37 +48,80 @@ html{
 		font-size: 278%;
 	}
 }
+/* ************************************************** */
+
+/* 以下为flex方法设置header，但若将头部三块文字任意去掉一两个，不能保证其余文字仍在原位 */
 
 /* 设置header */
-header{
-	display: -webkit-flex;           /* 兼容处理 */
+/* header{
+	display: -webkit-flex;           兼容处理
 	display: flex;
-	justify-content: space-between;  /*文字 左右中 分布*/
-	align-items: center;             /* 文字居中 */  
+	justify-content: space-between;  文字 左右中 分布
+	align-items: center;             文字居中  
 	height: 0.9rem;
 	background-color: #5fc0cd;
 	font-size: 0.36rem;
 	color: #fff;
-}
+} */
 
 /* 关闭 */
-.close{
+/* .close{
 	padding-left: 0.3rem;
 	font-size: 0.32rem;
 }
 
 /* 注册 */
-.login{
+/* .login{
 	padding-right: 0.3rem;
+	font-size: 0.32rem;
+} */
+
+
+/* ****************************************************** */
+
+/* position方法设置头部，可保证去掉任意一块文字，其余文字仍在原位
+/* 设置header */
+header{	 
+	position: relative;
+	height: 0.9rem;
+	background-color: #5fc0cd;
+	color: #fff;
+}
+
+/* 关闭 */
+.close{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0.3rem;
 	font-size: 0.32rem;
 }
 
+/* 注册 */
+.login{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0.3rem;
+	font-size: 0.32rem;
+}
+
+/* 登陆 */
+.signin{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 0.36rem;
+}
+
+/* *************************************** */
 form{
 	display: -webkit-flex;           /* 兼容处理 */
 	display: flex;
 	flex-direction: column;
 	position: relative;
-}
+} 
 
 /* 设置input */
 input{
