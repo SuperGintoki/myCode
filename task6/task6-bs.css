@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	 font-size: 625%;  /* 720*1280 */
+}
+
+@media screen and (max-width: 725px){
+	html{
+		font-size: 625%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	html{
+		font-size: 417%;
+	}
+}
+
+@media screen and (max-width: 440px){
+	html{
+		font-size: 382%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	html{
+		font-size: 347%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	html{
+		font-size: 312.5%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	html{
+		font-size: 278%;
+	}
+}
+
+/* 头部开始 */
+header{
+	height: .9rem;
+	background-color: #5fc0cd;
+}
+
+header button{
+	margin-top: .1rem;
+	border: none;
+	width: 1.45rem;
+	height: .7rem;
+	font-size: .34rem;
+	outline: none;
+}
+
+/* 找雇主按钮 */
+.find-boss{
+	border-top-left-radius: .1rem;
+	border-bottom-left-radius: .1rem;
+    background-color: #55a8b3;
+    color: #fff;
+}
+
+/* 找护工按钮 */
+.find-carer{
+	margin-left: -0.1rem;
+	border-radius: .1rem;
+	background-color: #fff;
+	color: #5fc0cd;
+}
+
+/* 头部图片 */
+.map{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%); 
+	width: .42rem;
+	height: .44rem;
+	background: url(images/task6.png) -0.1rem -0.1rem;
+	background-size: 1.72rem 1.27rem;
+}
+
+/* 下拉列表开始 */
+nav{
+	margin-top: .9rem;  
+	border-bottom: 5px solid #e1e5e7;
+	height: .8rem;
+	background-color: #fff;
+}
+
+/* 设置下拉列表 */
+.dropdown{
+	width: 100%;
+    line-height: .8rem;
+}
+
+/* 设置下拉列表的按钮 */
+button.btn{
+	padding: 0;   /* 消除预设样式，以防屏幕过小时文字溢出 */
+	border-right: 1px solid #e1e5e7;
+	width: 100%;
+	font-size: .28rem;
+	background-color: #fff;
+	color: #aaa;
+}
+
+button.del-line{
+	border-right: none;
+}
+
+/* 设置小三角 */
+.caret{
+	float: right;
+	margin-top: .15rem;
+	margin-right: .2rem;
+	border-width: .07rem;  /* 改变小三角形的大小 */
+}
+
+/* 设置下拉菜单 */
+.dropdown-menu{
+	margin: 0;  /* 消除下拉列表和底部边框之间的缝隙 */
+	padding: 0;
+	width: 100%;
+	min-width: 0;  /* 消除预设的样式，使之随列表的宽度变化而变化 */
+	font-size: .24rem;
+	text-align: right;
+	background-color: #eee;
+}
+
+/* 消除点击下拉列表时出现的边框和阴影 */
+.btn:focus{
+	outline: none !important;  
+	box-shadow: none;
+}
+
+/* 设置下拉列表的边距 */
+.dropdown-menu > li > a{
+	padding: 0.1rem;
+	border-bottom: 1px solid #fff;
+	color: #999;
+}
+
+.dropdown-menu > li > a:hover{
+	background-color: #bbb;
+}
+
+/* 消除col中15px的padding，只在左右两边留15px的padding */
+.drop1{
+	padding-right: 0;
+}
+.drop2{
+	padding: 0;
+}
+.drop3{
+	padding-left: 0;
+}
+
+/* main开始 */
+main{
+	margin-top: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+main .row{
+	margin-top: .1rem;
+}
+
+/* 各种小图标 */
+/* 日历图标 */
+.date{
+	display: inline-block;
+	width: .24rem;
+	height: .33rem;
+	vertical-align: top;
+	background: url(images/task6.png) -1.38rem -0.1em;
+	background-size: 1.72rem 1.27rem;
+}
+
+/* 定位图标 */
+.location{
+	display: inline-block;
+	margin-top: .07rem;
+	width: .19rem;
+	height: .23rem;
+	background: url(images/task6.png) -1.38rem -0.54rem;
+	background-size: 1.72rem 1.27rem;
+}
+
+/* 箭头图标 */
+.arrow{
+	display: inline-block;
+	margin-left: .2rem;
+	margin-right: 4%;
+	width:.19rem;
+	height: .33rem;
+	vertical-align: text-bottom;
+	background: url(images/task6.png) -0.72rem -0.74rem;
+	background-size: 1.72rem 1.27rem;
+} 
+
+/* 设置日历图标和定位图标旁边的文字 */
+.service{
+	color: #b6b6b6;
+	font-size: .25rem;
+}
+
+/* 设置服务日期 */
+.period{
+	padding-right: 0;
+	font-size: .28rem;
+}
+
+/* 当屏幕过小时文字溢出 */
+@media screen and (max-width: 620px){
+	.period span{
+		display: inline-block;
+		width: 2rem !important;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		vertical-align: middle; /* 防止文字溢出时将下行挤到下面 */
+	}
+}
+
+/* 设置价格 */
+.price{
+	padding-left: 0;
+	font-size: .3rem;
+	text-align: right;
+	color: #e63b0e;
+}
+
+/* 设置下边线 */
+main .bot-line{
+	padding-bottom: .21rem;
+	border-bottom: 1px solid #e1e5e7;
+}
+
+/* footer开始 */
+footer{
+	height: 1rem;
+	font-size: .2rem;
+	background-color: #f8fafb;
+}
+
+/* 底部的留言图片 */
+footer img{
+	margin-top: .03rem;
+	width: .94rem;
+	height: .94rem;
+}
+
+/* 首页图片 */
+.home{
+	display: block;
+    margin-top: .15rem;
+	margin-bottom: .1rem;
+	width: .46rem;
+	height: .4rem;
+	background: url(images/task6.png) -0.72rem -0.1rem;
+	background-size: 1.72rem 1.27rem; 
+}
+
+/* 我的图片 */
+.mine{
+	display: block;
+	margin-top: .15rem;
+	margin-bottom: .1rem;
+	width: .42rem;
+	height: .43rem;
+	background: url(images/task6.png) -0.1rem -0.74rem;
+	background-size: 1.7rem 1.27rem;
+}
+
+/* 文字颜色 */
+.left{
+	color: #5fc0cd;
+}
+
+.right{
+	color: #a6a7a7;
+}
+
+
+
+
+
+
+
+
+
