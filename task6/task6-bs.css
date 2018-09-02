@@ -103,7 +103,9 @@ nav{
 
 /* 设置下拉列表的按钮 */
 button.btn{
+	box-sizing: border-box;
 	padding: 0;   /* 消除预设样式，以防屏幕过小时文字溢出 */
+	padding-right: .4rem;
 	border-right: 1px solid #e1e5e7;
 	width: 100%;
 	font-size: .28rem;
@@ -117,9 +119,10 @@ button.del-line{
 
 /* 设置小三角 */
 .caret{
-	float: right;
-	margin-top: .15rem;
-	margin-right: .2rem;
+	position: absolute;
+	top: 50%;
+	right: .2rem;
+	margin-top: -0.03rem;
 	border-width: .07rem;  /* 改变小三角形的大小 */
 }
 
