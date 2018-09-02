@@ -45,6 +45,7 @@ html{
 
 /* 头部开始 */
 header{
+	text-align: center;
 	height: .9rem;
 	background-color: #5fc0cd;
 }
