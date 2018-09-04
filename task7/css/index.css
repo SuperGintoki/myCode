@@ -1,0 +1,200 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+}
+
+html{
+	font-size: 625%;   /* 640*1136 */
+}
+
+@media screen and (max-width: 725px){
+	html{
+		font-size: 625%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	html{
+		font-size: 468.75%;
+	}
+}
+
+@media screen and (max-width: 440px){
+	html{
+		font-size: 429.7%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	html{
+		font-size: 390.6%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	html{
+		font-size: 351.6%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	html{
+		font-size: 312.5%;
+	}
+}
+
+/* header开始 */
+
+header{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: .9rem; 
+	background-color: #29bde0;
+}
+
+/* 菜单图标 */
+.menu{
+	position: absolute;
+	top: 50%;
+	left: .2rem;
+	margin-top: -0.135rem;
+	width: .34rem;
+	height: .27rem;
+	background: url(../images/index.png) -0.54rem -0.1rem;
+	background-size: 0.98rem 0.6rem;
+}
+
+/* main开始 */
+
+main{
+	margin-top: .9rem;
+	text-align: center; 
+}
+
+/* 上次游戏 */
+.last-game{
+	position: relative;
+	display: inline-block;  /* 触发BFC，防止margin折叠 */
+	margin: .3rem auto;
+	width: 90%;
+	height: 1.15rem;
+	font-size: 0.348rem;
+	line-height: 1.15rem;
+	vertical-align: middle;
+	background-color: #fff;
+	color: #9a9a9a;
+}
+
+/* 箭头图标 */
+.arrow{
+	position: absolute;
+	top: 50%;
+	right: .15rem;
+	margin-top: -0.2rem;
+	width: .24rem;
+	height: .4rem;
+	background: url(../images/index.png) -0.1rem -0.1rem;
+	background-size: 0.98rem 0.6rem;
+}
+
+/* 捉鬼游戏部分 */
+.slayer{
+	position: relative;
+	margin: 0 auto 0.6rem auto;
+	width: 90%;
+	font-size: 0;  /* 消除因字体过大带来的多余空格 */
+	background-color: #fff;
+}
+
+/* 捉鬼游戏头部 */
+.slayer-head{
+	border-bottom: 0.01rem solid #fdd793;
+	height: .9rem;
+	font-size: .377rem;
+	line-height: .9rem;
+	color: #fbb435;
+}
+
+/* 捉鬼游戏版本 */
+.edition{
+	margin: .3rem auto;
+	width: 81%;
+	height: 1.35rem;
+	font-size: .32rem;
+	line-height: 1.35rem;
+	background-color: #69d1e9;
+	color: #fff;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/* 改版本玩家人数 */
+.player-num{
+	font-size: .245rem;
+	color: #787878;
+}
+
+/* 右边小三角 */
+.next-page{
+	position: absolute;
+	top: 50%;
+	right: -1%;
+	margin-top: -0.25rem;
+	width: 0;
+	height: 0;
+	border: .3rem solid #fbb435;
+	border-color: transparent transparent transparent #fbb435;
+}
+
+/* 利用媒体查询使小三角居中 */
+@media screen and (max-width: 775px){
+	.next-page{
+		right: -3%;
+	}
+}
+
+@media screen and (max-width: 625px){
+	.next-page{
+		right: -4.5%;
+	}
+}
+
+@media screen and (max-width: 535px){
+	.next-page{
+		right: -5.5%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.next-page{
+		right: -4%;
+	}
+}
+
+/* 屏幕下方的小圆点 */
+span{
+	display: inline-block;
+	margin-top: .15rem;
+	margin-right: .1rem;
+	margin-bottom: .15rem;
+	border-radius: 50%;
+	width: .2rem;
+	height: .2rem;
+	background-color: #f0f0f0;
+}
+
+/* 当前活跃的小圆点 */
+.active{
+	background-color: #69d1e9;
+}
+
+/* 消除最后一个小圆点的margin-right，使其整体居中 */
+.last{
+	margin-right: 0;
+}
