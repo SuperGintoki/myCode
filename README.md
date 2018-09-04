@@ -13,6 +13,6 @@
 6.护工列表页
 [demo](https://supergintoki.github.io/cssTask/task6/task6-bs.html)
 </br>
-7.护工列表页
+7.桌游精灵
 [demo](https://supergintoki.github.io/cssTask/task7/index.html)
 </br>
