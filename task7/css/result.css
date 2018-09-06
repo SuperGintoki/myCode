@@ -55,7 +55,7 @@ header{
 /* 头部右侧图标 */
 .help{
 	display: inline-block;
-	width: .41rem;
+	width: .4rem;
 	height: .42rem;
 	vertical-align: middle;
 	background: url(../images/result.png) -0.66rem -0.05rem;
@@ -77,27 +77,25 @@ header{
 
 /* 卧底胜利图片 */
 .result img{
+	margin-top: .4rem;
 	width: 3.51rem;
 	height: 2.05rem;
 }
+/* 卧底胜利文字 */
+.result p{
+	margin-top: -0.75rem;
+	margin-bottom: .2rem;
+	font-size: .481rem;
+	color: #fff;
+}
 
 /* 卧底胜利文字解说 */
-.result div{
+.result span{
+	display: inline-block;
+	margin-bottom: .4rem;
 	font-size: .33rem;
 	text-align: left;
 	color: #ffc865;
-}
-
-/* 当屏幕过大文字排成一行时，文字居中 */
-@media screen and (min-width: 1157px){
-	.result div{
-	text-align: center;
-   }
-}
-
-.victory{
-     margin-top: .4rem;
-     margin-bottom: .4rem;
 }
 
 /* 玩家身份统计 */

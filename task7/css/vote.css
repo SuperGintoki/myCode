@@ -95,7 +95,7 @@ main{
 	right: .15rem;
 	margin-top: -0.26rem;
 	width: .52rem;
-	height: .53rem;
+	height: .52rem;
 	background: url(../images/vote.png) -0.02rem -2.23rem;
 	background-size: 0.56rem 3.33rem;
 }
@@ -128,10 +128,10 @@ main{
 
 /* 玩家身份 */
 .identity{
-	height: .9rem;
+	height: .89rem;
 	width: 100%;
     font-size: .3rem;
-    line-height: .9rem;
+    line-height: .89rem;
     background-color: #f5c97b;
     color: #565656;
 }
@@ -146,6 +146,7 @@ main{
 /* 玩家头像下面四个小图标 */
 .knife{
 	display: inline-block;
+	margin-right: 2%;
 	width: .3rem;
 	height: .3rem;
 	background: url(../images/vote.png) -0.02rem -0.02rem;
@@ -154,6 +155,7 @@ main{
 
 .glass{
 	display: inline-block;
+	margin-right: 2%;
 	width: .3rem;
 	height: .3rem;
 	background: url(../images/vote.png) -0.02rem -0.36rem;
@@ -162,6 +164,7 @@ main{
 
 .position{
 	display: inline-block;
+	margin-right: 2%;
 	width: .3rem;
 	height: .3rem;
 	background: url(../images/vote.png) -0.02rem -0.7rem;
@@ -178,6 +181,8 @@ main{
 
 /* 隐藏四个小图标 */
  .toolbar{
+ 	width: 1.34rem;
+ 	font-size: 0;
 	visibility: hidden;
 } 
 
