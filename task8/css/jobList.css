@@ -33,16 +33,15 @@ body{
 	color: #999;
 }
 
-.specialisations span{
-	margin-right: .25rem;
+.specialisations a{
+	margin-right: .22rem;
+	padding: 0 0.05rem;
 	white-space: nowrap;
+	text-decoration: none;
 	color: #000;
 }
 
-.specialisations em{
-	margin-right: .25rem;
-	padding: 0 0.05rem;
-	font-style: normal;
+.specialisations a:hover{
 	background-color: #29b078;
 	color: #fff;
 }
@@ -52,8 +51,9 @@ body{
 	top: 50%;
 	transform: translateY(-50%);
 }
+
 .sorts{
-	margin-left: 1rem;
+	margin-left: .8rem;
 }
 
 

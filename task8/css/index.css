@@ -259,23 +259,9 @@ h5{
 	background-color: #fff;
 }
 
-.prominent{
-	border-right: 2px solid #eee;
+.partner div:hover{
 	box-shadow: 0 0 10px #ddd;
-}
-
-@media screen and (max-width: 990px){
-	.prominent{
-		border-right: none;
-		box-shadow: 0 0 0 #fff;
-	}
-}
-
-@media screen and (max-width: 768px){
-	.prominent{
-		border-bottom: 2px solid #eee;
-		box-shadow: 0 0 5px #ddd;
-	}
+	z-index: 1; /* 提高层级以防阴影被遮盖 */
 }
 
 /* *************友情链接开始 *******************/
@@ -299,6 +285,13 @@ h5{
 
 @media (min-width: 992px){
 	.col-md-10s{
+		width: 10%;
+		float: left;
+	}
+}
+
+@media (min-width: 1200px){
+	.col-lg-5ths{
 		width: 10%;
 		float: left;
 	}
