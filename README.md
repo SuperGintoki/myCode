@@ -16,6 +16,9 @@
 7.桌游精灵
 [demo](https://supergintoki.github.io/cssTask/task7/index.html)
 </br>
-7.技能树
+8.技能树
 [demo](https://supergintoki.github.io/cssTask/task8/index.html)
+</br>
+10.技能树
+[demo](https://supergintoki.github.io/cssTask/task10/package.html)
 </br>
