@@ -1,0 +1,65 @@
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eff0f4;
+}
+/* reset font-size for media requery */
+html {
+  font-size: 625%;
+  /* 720*1280 */
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 416.66666667%;
+  }
+}
+@media screen and (max-width: 440px) {
+  html {
+    font-size: 381.94444444%;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 347.22222222%;
+  }
+}
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 312.5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 277.77777778%;
+  }
+}
+/* flex layout */
+.base-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+/* center arrangement */
+.base-center {
+  justify-content: space-between;
+  /* three column layout */
+  align-items: center;
+  /* vertical center   */
+}
+/* flexbox in vertical arrangement */
+.base-columns {
+  flex-direction: column;
+}
+/* remove border */
+.base-noborder {
+  border: none;
+}
+/* remove ouline */
+.base-nooutline {
+  outline: none;
+}
+/* left float */
+.fr {
+  float: right;
+}
+/* browser compatiblity in changing the placeholder of input */
