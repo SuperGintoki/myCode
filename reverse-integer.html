@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reverse Integer</title>
+</head>
+<body>
+	<script>
+        /*leetCode运行时间： 68ms*/
+		var reverse = function(x){               
+			var min = Math.pow(-2, 31);
+			var max = Math.pow(2, 31) -1;
+			var num = 0;
+            
+            /*利用三元表达式判断是否有负号，有则返回不带负号的数字长度，无则直接返回长度*/
+			var len = String(x).indexOf("-") == -1? String(x).length : String(x).length -1;
+            
+            /*利用pop和push的方法来翻转数字*/
+			for(var i = 0; i < len; i++){
+				var pop = x % 10;
+				x = parseInt(x / 10);
+				num = num*10 + pop;
+			}
+            
+            /*判断结果是否超出范围*/
+			if(num > max || num < min){
+				return 0;
+			}
+			return num;
+		}
+        
+        /*test*/
+		console.log(reverse(-15102));
+	</script>
+	
+</body>
+</html>
