@@ -10,3 +10,9 @@ Difficulty: easy
 3.
 [reverse-integer:](https://github.com/SuperGintoki/practice/blob/master/reverse-integer1.html)
 </br>
+2.
+[palindrome-number-recommend:](https://github.com/SuperGintoki/practice/blob/master/palindromeNumber.html)
+</br>
+3.
+[palindrome-number:](https://github.com/SuperGintoki/practice/blob/master/palindromeNumber1.html)
+</br>
