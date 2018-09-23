@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+        var isPalindrome = function(x){
+			var num = 0;
+			var x1 = x;
+
+			if(x >= 0){
+				var len = x.toString().length;
+
+				for(var i = 0; i < len; i++){
+					var pop = x1 % 10;
+					x1 = parseInt(x1 / 10);
+					num = num * 10 + pop;
+				}
+				if(x == num){
+					return true;
+				}
+			}
+			return false;
+		}
+	</script>
+	
+</body>
+</html>
