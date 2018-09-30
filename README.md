@@ -22,3 +22,6 @@ Difficulty: easy
 4).
 [Rome-to -integer:](https://github.com/SuperGintoki/practice/blob/master/romanToInteger1.html)
 </br>
+5.
+[Longest-Common-Prefix:](https://github.com/SuperGintoki/practice/blob/master/LongestCommonPrefix.html)
+</br>
