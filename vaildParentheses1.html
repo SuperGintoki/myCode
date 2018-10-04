@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Valid Parentheses</title>
+</head>
+<body>
+	<script>
+		var isValid = function(s) {
+		
+			var arr = s.split("");
+			var dealArr = [];
+
+			for(var i = 0; i < arr.length; i++){
+				dealArr.push(arr[i]);
+			   /* console.log(dealArr, i);*/
+			    for(var j = 0; j < dealArr.length; j ++){
+			    	if(dealArr[j-1] == "(" && dealArr[j] == ")" && dealArr[j-1] || dealArr[j-1] == "[" && dealArr[j] == "]" && dealArr[j-1] || dealArr[j-1] == "{" && dealArr[j] == "}" && dealArr[j-1]){
+
+						dealArr.splice(j-1, 2);
+						/*console.log(dealArr, k, "a");*/
+					}
+			    }
+				/*console.log(dealArr);*/
+			}
+
+			if(dealArr.length == 0){
+				return true;
+			}
+			return false;
+  
+	    };
+
+	    console.log(isValid("()[]"));  //true
+	    console.log(isValid("([)]"));  //false;
+	    console.log(isValid("()"));   //true
+	    console.log(isValid("{[]}"));  //true
+	    console.log(isValid("{}[]()"));  //true
+	    console.log(isValid("(]"));   //false
+	    console.log(isValid("{}([{{{{{(}}}}})]())"));  //false
+	    console.log(isValid("){"));
+	    console.log(isValid("))[{"));
+	    console.log(isValid("[([]])"));
+
+
+
+
+	</script>
+	
+</body>
+</html>
