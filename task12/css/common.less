@@ -1,0 +1,119 @@
+/* font setup */
+.yaHei{
+	font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+
+.margin0{
+	margin: 0;
+}
+
+.padding0{
+	padding: 0;
+}
+
+/* padding */
+.pm(@mp, @dir, @rem){
+	@{mp}-@{dir}: @rem;
+}
+
+@font-size: 625%;
+@base-width: 480px;
+/* reseting font-size of html via media query */
+.loop(@font-size, @i, @base-width){
+	@media screen and(max-width: (@base-width - 40 * @i)){
+		html{
+			font-size: @font-size * (@base-width - 40 * @i) / 720;
+		}		
+	}
+}
+
+@blue: #5fc0cd;
+@white: #fff;
+@rem85: .85rem;
+/* top fixed */
+.fixHeader(@posH, @co:@blue){
+	position: fixed;
+	top: @posH;
+	z-index: 1;
+	width: 100%; 
+	height: @rem85;
+	background-color: @co;
+}
+
+/* bottom fixed */
+.fixFooter{
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+@percent50: 50%;
+/*  horizontal center via position */
+.alignPs{
+	position: absolute;
+	left: @percent50;
+	transform: translateX(-@percent50);
+}
+
+/* .vertical center via position */
+.verPs{
+	position: absolute;
+	top: @percent50;
+	transform: translateY(-@percent50);
+}
+
+/* center via position*/
+.cenPs{
+	position: absolute;
+	top: @percent50;
+	left: @percent50;
+	transform: translate(-@percent50, -@percent50);
+}
+
+.cenFlex{
+	display: flex;
+	align-items: center;
+}
+
+/* adding sprites */
+.addImg(@img-path, @imgw, @imgh, @posw, @posh, @bgw, @bgh){
+	width: @imgw;
+	height: @imgh;
+	background: url("../images/@{img-path}") @posw @posh;
+	background-size: @bgw @bgh;
+} 
+
+/* adding background images */
+.addbg(@img-path){
+	background-image: url("../images/@{img-path}");
+}
+
+/* single border */
+.border(@dir, @color){
+	border-@{dir}: .01rem solid @color;
+}
+
+.ib{
+	display: inline-block;
+}
+
+.noBord{
+	border: none;
+}
+
+.noOutl{
+	outline: none;
+}
+
+/* nunecessary */
+.float(@dir){
+	float: @dir;
+}
+
+.tc{
+	text-align: center;
+}
+
+
+

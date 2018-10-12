@@ -1,0 +1,59 @@
+/* font setup */
+.yaHei {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+.margin0 {
+  margin: 0;
+}
+.padding0 {
+  padding: 0;
+}
+/* padding */
+/* reseting font-size of html via media query */
+/* top fixed */
+/* bottom fixed */
+.fixFooter {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+/*  horizontal center via position */
+.alignPs {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* .vertical center via position */
+.verPs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* center via position*/
+.cenPs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cenFlex {
+  display: flex;
+  align-items: center;
+}
+/* adding sprites */
+/* adding background images */
+/* single border */
+.ib {
+  display: inline-block;
+}
+.noBord {
+  border: none;
+}
+.noOutl {
+  outline: none;
+}
+/* nunecessary */
+.tc {
+  text-align: center;
+}
