@@ -1,0 +1,71 @@
+/* common color anf font */
+@blue: #29bde0;
+@orange: #fbb435;
+@white: #fff;
+
+@font-size: 625%;
+@base-width: 640px;
+/* reseting font-size of html via media query */
+.fontHtml(@font-size, @i, @base-width){
+	@media screen and(max-width: (@base-width - 40 * @i)){
+		html{
+			font-size: @font-size * (@base-width - 40 * @i) / 720;
+		}		
+	}
+}
+
+/* fixing in the head */
+.fixTop{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+/* center */
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* horizontal center via position */
+.alignCenter{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/*vertical center via position */
+.verticalCenter{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* about sprite */
+.spriteImg(@imgw, @imgh, @path, @posW, @posH, @bgW, @bgH){
+	width: @imgw;
+	height: @imgh;
+	background: url("../images/@{path}") @posW @posH;
+	background-size: @bgW @bgH;
+}
+
+.display(@attr){
+	display: @attr;
+}
+
+.veralign(@attr){
+	vertical-align: @attr;
+}
+
+
+
+
+
+
+
+
+
+
+

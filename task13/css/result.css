@@ -1,0 +1,134 @@
+.head {
+  border-bottom: 0.01rem solid #74d4eb;
+  /* 左边的主页图标 */
+  /* 右边的帮助图标 */
+}
+.head_menu {
+  width: 0.51rem;
+  height: 0.42rem;
+  background: url("../images/result.png") -0.05rem -0.05rem;
+  background-size: 1.11rem 0.52rem;
+}
+.head_close {
+  width: 0.4rem;
+  height: 0.42rem;
+  background: url("../images/result.png") -0.66rem -0.05rem;
+  background-size: 1.11rem 0.52rem;
+}
+/* main 开始 */
+.main {
+  margin-top: 0.9rem;
+  padding: 0.4rem 2% 0.2rem 2%;
+  background-color: #29bde0;
+  color: #fff;
+}
+.main_result {
+  font-size: 0;
+  text-align: center;
+}
+.main_result img {
+  width: 3.51rem;
+  height: 2.05rem;
+}
+.main_result p {
+  margin-top: -0.75rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.481rem;
+}
+.main_result span {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  height: 1rem;
+  font-size: 0.33rem;
+  text-align: left;
+  color: #ffc865;
+}
+.main_data {
+  font-size: 0.26rem;
+  white-space: nowrap;
+}
+.main .data_id {
+  float: left;
+  width: 33%;
+}
+.main .data_id--word2 {
+  letter-spacing: 1.45em;
+  margin-right: -1em;
+}
+.main .data_id--word3 {
+  letter-spacing: 0.2em;
+  margin-right: 0.3em;
+}
+.main .center {
+  text-align: center;
+}
+.main .right {
+  text-align: right;
+}
+.main .data_word {
+  margin-top: 0.85rem;
+  margin-bottom: 0.05rem;
+}
+/* process开始 */
+.process {
+  padding-top: 0.25rem;
+}
+.process_day {
+  padding: 0.1rem 2% 0.25rem 2%;
+  font-size: 0.35rem;
+  color: #515151;
+}
+.process_right {
+  float: right;
+  padding-top: 0.1rem;
+  font-size: 0.2rem;
+  color: #cfcfcf;
+}
+.process_result {
+  padding: 0 2%;
+  font-size: 0.25rem;
+  color: #a6a6a6;
+}
+.process .line {
+  padding-bottom: 0.35rem;
+  border-bottom: 0.01rem solid #ddd;
+}
+.process_unknow {
+  padding: 1rem 2% 0 2%;
+  font-size: 0.399rem;
+  color: #29bde0;
+}
+.process_fr {
+  float: right;
+}
+.footer {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  height: 1.3rem;
+  font-size: 0;
+  text-align: center;
+  background-color: rgba(41, 189, 224, 0.5);
+}
+.footer button {
+  margin: 0.2rem 3% 0 3%;
+  border: none;
+  border-radius: 0.15rem;
+  width: 40%;
+  font-size: 0.35rem;
+  color: #fff;
+  outline: none;
+}
+.footer button a {
+  display: inline-block;
+  width: 100%;
+  height: 0.9rem;
+  line-height: 0.9rem;
+}
+.footer_l {
+  background-color: #f66f6f;
+}
+.footer_r {
+  background-color: #fbb435;
+}
