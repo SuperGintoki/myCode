@@ -1,0 +1,56 @@
+@charset "utf-8";
+body,
+ul,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #afbac0;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+button,
+input {
+  outline: none;
+}
+html {
+  font-size: 625%;
+}
+/* reseting font-size of html via media query */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 416.66666667%;
+  }
+}
+@media screen and (max-width: 440px) {
+  html {
+    font-size: 381.94444444%;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 347.22222222%;
+  }
+}
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 312.5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 277.77777778%;
+  }
+}

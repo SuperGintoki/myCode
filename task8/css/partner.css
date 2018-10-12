@@ -1,0 +1,164 @@
+body{
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei";
+	background-color: #fafafa;
+}
+
+/************* banner图开始 ****************/
+.banner img{
+	width: 100%;
+}
+/* .banner{
+	width: 100%;
+	height: 2.48rem;
+	background: url(../images/banner.png) center;
+	background-size: cover;
+} */
+/* .banner{
+	position: relative;
+	width: 100%;
+	height: 2.48rem;
+}
+
+是banner始终居中
+.banner img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2.48rem;
+	background-size: cover;
+} */
+
+/****************** main开始 ****************************/
+
+/* 路径设置 */
+.path{
+	margin-top: .2rem;
+	font-size: .16rem;
+}
+
+.path em{
+	font-style: normal;
+	color: #29b078;
+}
+
+/* 侧边栏设置 */
+.subnav{
+	margin-top: .2rem;
+	border: 1px solid #eee;
+	background-color: #fff;
+}
+
+/* 设置合作企业head */
+.subnav h5{
+	border-bottom: 1px solid #e6e6e6;
+	height: .6rem;
+	font-size: .16rem;
+	line-height: .6rem;
+	font-weight: 700;
+}
+
+/* 设置合作企业 */
+.subnav li{
+	width: 1.2rem;       /* 限制宽度使之在居中的同时左对齐 */
+	list-style: circle inside;  /* 设置项目符号 */
+	font-size: .21rem;     /* 通过设置字体大小来设置项目符号的大小 */
+	text-align: left;    /* 左对齐 */
+	color: #ff650e;       /* 通过字体颜色来设置项目符号的颜色 */
+}
+
+@media screen and (max-width: 485px){
+	.subnav li{
+		width: 1.8rem;
+	}
+}
+
+.subnav li > a{
+	display: inline-block;
+	margin-left: -0.1rem;    /* 调整文字和项目符号之间的距离 */
+	font-size: .14rem;       /* 设置文字大小 */
+	vertical-align: middle;   /* 文字和项目符号对齐 */
+	text-decoration: none;
+	color: #29b078;
+}
+
+.subnav li:hover{
+	list-style: disc inside;
+}
+.subnav li:hover a{
+	color: #ff650e;
+
+}
+
+/* 内容区 */
+.main{
+	margin-top: .2rem;
+	margin-bottom: 1.5rem;
+	border: .01rem solid #eee;
+	font-size: .14rem;
+	background-color: #fff;
+	color: #999;
+
+}
+
+/* 内容区头部 */
+.main-head{
+	position: relative;
+	padding: 0.2rem 0.5rem;
+	line-height: 1.9;
+	border-bottom: 0.01rem solid #e6e6e6;
+}
+
+/* 土豆图片 */
+.main-head img{
+	position: absolute;
+	top: 50%;
+	left: .5rem;
+	margin-top: -0.165rem;
+	width: 1.2rem;
+	height: .33rem;
+}
+
+/* 由文字撑开父元素 */
+.main-head span{
+	display: inline-block;
+	margin-left: 1.5rem;
+}
+
+/* 主要内容 */
+.content{
+	padding: 0.35rem 0.5rem 1rem 0.5rem;
+	line-height: 2.2;
+
+}
+
+/* 段落设置 */
+.content p{
+	margin-bottom: .3rem;
+	text-indent: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

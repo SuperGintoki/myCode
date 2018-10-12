@@ -1,0 +1,102 @@
+/* @import (reference) "common.less"; */
+@import "common.less";
+
+@color-1: #5fc0cd;  //blue
+@color-2: #fff;  //white
+@num-1: .36rem;
+@num-2: .32rem;
+@num-3: .3rem;
+
+/* header setup */
+header {
+	.base-flex();
+	.base-center();
+	height: 0.9rem;
+	background-color: @color-1;
+	font-size: @num-1;
+	color: @color-2;
+
+	.close {    /* close the page */
+		padding-left: @num-3;
+		font-size: @num-2;
+	}
+
+	.login {   /* sign up */
+		padding-right: @num-3;
+		font-size: @num-2;
+	}
+}
+
+@num-4: 1rem;
+@color-3: #eaedee;
+.bg-img(@img-path) {
+	background: url("../images/@{img-path}") @color-2 no-repeat @num-3 center;
+}
+
+/* form setup */
+form {
+	.base-flex();
+	.base-columns();
+	position: relative;
+
+	input {  /* input setup */
+		height: @num-4;
+		margin-top: .15rem;
+		padding-left: 1.4rem;
+		.base-noborder();
+		.base-nooutline();
+		font-size: @num-3;
+	}
+
+	input[type="text"] {
+		.bg-img("iphone.png");
+		background-size: 0.27rem 0.41rem;
+	}
+
+	input[type="password"] {
+		.bg-img("locked.png");
+		background-size: 0.29rem 0.43rem;
+	}
+
+	.compatible(color, @color-3); 
+
+	span{
+		position: absolute;
+		left: @num-4;
+		z-index: 1;
+		height: .55rem;
+		width: .02rem;
+		background-color: @color-3;
+	}
+
+	.phone-line{
+		top: 0.375rem;
+	}
+
+	.pwd-line{
+	    top: 1.525rem;
+    }
+
+    button{ /* 设置button */
+		height: @num-4;
+		margin-top: @num-4 - 0.3;
+		.base-noborder();
+		background-color: @color-1;
+		.base-nooutline();
+		font-size: @num-1;
+		color: @color-2;
+		letter-spacing: @num-4/10;
+	}
+}
+
+/* 设置下方文字部分 */
+a{
+	.fr();
+	padding-top: @num-3 - 0.1;
+	padding-right: @num-3;
+	font-size: 0.28rem;
+	color: @color-1;
+}
+
+
+

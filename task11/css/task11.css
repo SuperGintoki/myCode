@@ -1,0 +1,162 @@
+/* @import (reference) "common.less"; */
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eff0f4;
+}
+/* reset font-size for media requery */
+html {
+  font-size: 625%;
+  /* 720*1280 */
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 416.66666667%;
+  }
+}
+@media screen and (max-width: 440px) {
+  html {
+    font-size: 381.94444444%;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 347.22222222%;
+  }
+}
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 312.5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 277.77777778%;
+  }
+}
+/* flex layout */
+.base-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+/* center arrangement */
+.base-center {
+  justify-content: space-between;
+  /* three column layout */
+  align-items: center;
+  /* vertical center   */
+}
+/* flexbox in vertical arrangement */
+.base-columns {
+  flex-direction: column;
+}
+/* remove border */
+.base-noborder {
+  border: none;
+}
+/* remove ouline */
+.base-nooutline {
+  outline: none;
+}
+/* left float */
+.fr {
+  float: right;
+}
+/* browser compatiblity in changing the placeholder of input */
+/* header setup */
+header {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  /* three column layout */
+  align-items: center;
+  /* vertical center   */
+  height: 0.9rem;
+  background-color: #5fc0cd;
+  font-size: 0.36rem;
+  color: #fff;
+}
+header .close {
+  /* close the page */
+  padding-left: 0.3rem;
+  font-size: 0.32rem;
+}
+header .login {
+  /* sign up */
+  padding-right: 0.3rem;
+  font-size: 0.32rem;
+}
+/* form setup */
+form {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+form input {
+  /* input setup */
+  height: 1rem;
+  margin-top: 0.15rem;
+  padding-left: 1.4rem;
+  border: none;
+  outline: none;
+  font-size: 0.3rem;
+}
+form input[type="text"] {
+  background: url("../images/iphone.png") #fff no-repeat 0.3rem center;
+  background-size: 0.27rem 0.41rem;
+}
+form input[type="password"] {
+  background: url("../images/locked.png") #fff no-repeat 0.3rem center;
+  background-size: 0.29rem 0.43rem;
+}
+form input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #eaedee;
+}
+form input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #eaedee;
+}
+form input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #eaedee;
+}
+form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #eaedee;
+}
+form span {
+  position: absolute;
+  left: 1rem;
+  z-index: 1;
+  height: 0.55rem;
+  width: 0.02rem;
+  background-color: #eaedee;
+}
+form .phone-line {
+  top: 0.375rem;
+}
+form .pwd-line {
+  top: 1.525rem;
+}
+form button {
+  /* 设置button */
+  height: 1rem;
+  margin-top: 0.7rem;
+  border: none;
+  background-color: #5fc0cd;
+  outline: none;
+  font-size: 0.36rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+/* 设置下方文字部分 */
+a {
+  float: right;
+  padding-top: 0.2rem;
+  padding-right: 0.3rem;
+  font-size: 0.28rem;
+  color: #5fc0cd;
+}

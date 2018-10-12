@@ -1,0 +1,178 @@
+
+/* **************float+position方法*********************** */
+
+/* 重设body的样式 */
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #eff0f4;
+}
+
+/* 利用媒体查询设置font-size */
+html{
+	font-size: 625%;   /* 720*1280 */
+}
+
+@media screen and (max-width: 725px){
+	html{
+		font-size: 625%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	html{
+		font-size: 417%;
+	}
+}
+
+@media screen and (max-width: 440px){
+	html{
+		font-size: 382%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	html{
+		font-size: 347%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	html{
+		font-size: 312.5%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	html{
+		font-size: 278%;
+	}
+}
+
+/* 设置头部 */
+header{
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;   /* 文字垂直居中 */
+	background-color: #5fc0cd;
+	color: #fff;
+	font-size: 0.36rem;    /* 登陆的字号 */
+	text-align: center;    /* 登陆居中 */
+}
+
+/* header左边的关闭 */
+.close{
+	float: left;
+	margin-left: 0.3rem;
+	font-size: 0.32rem;
+}
+
+/* header右边的注册 */
+.login{
+	float: right;
+	margin-right: 0.3rem;
+	font-size: 0.32rem;
+}
+
+/* input设置 */
+input{
+	display: block;  /* 为了去除input周边多余的空白 */
+	box-sizing: border-box;
+	width: 100%;
+	height: 1rem;
+    margin-top: 0.15rem;  
+	padding: 0 0 0 1.35rem;
+	border: none;   /* 去除边框 */
+	font-size: 0.3rem;
+	outline: none;   /* 去除点击时出现的蓝色边框 */
+}
+
+/* 设置手机号输入框的图片背景 */
+input[type=text]{
+	background: url(images/iphone.png) #fff no-repeat 0.35rem center;
+	background-size: 0.27rem 0.41rem;
+}
+
+/* 设置密码输入框的图片背景 */
+input[type=password]{
+	background: url(images/locked.png) #fff no-repeat 0.35rem center;
+	background-size: 0.29rem 0.43rem;
+}
+
+/* 设置input中的placeholder属性的颜色并进行兼容性处理 */
+input::-webkit-input-placeholder{  /* WebKit, Blink, Edge */
+	color: #eaedee;
+}
+input:-moz-placeholder{  /* Mozilla Firefox 4 to 18 */
+	color: #eaedee;
+}
+input::-moz-placeholder{  /* Mozilla Firefox 19+ */
+	color: #eaedee;
+}
+input:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+	color: #eaedee;
+}
+
+/* 设置input背景图片右边出现的分隔线 */
+form{
+	position: relative;
+}
+
+/* 利用span做分隔线样式 */
+/* 通过position将分隔线定位到合适的地方 */
+form span{
+	position: absolute;
+    left: 1rem;
+	z-index: 1;
+	height: 0.55rem;
+	width: 0.02rem;
+    background-color: #eaedee; 
+}
+
+.phone-line{
+	top: 0.225rem;
+
+}
+
+.pwd-line{
+	top: 1.375rem;
+}
+
+/* 设施button按钮 */
+button{
+	width: 100%;
+	height: 1rem;
+	padding: 0;
+	border: none;
+	background-color: #5fc0cd;
+	font-size: 0.36rem;
+	color: #fff;
+	outline: none;
+	letter-spacing: 0.1rem
+}
+
+/* 设置底部的文字部分 */
+a{
+	float: right;
+	padding: 0.2rem 0.3rem 0 0;
+	font-size: 0.28rem;
+	color: #5fc0cd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
