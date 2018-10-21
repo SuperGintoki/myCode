@@ -1,0 +1,71 @@
+@charset: "utf-8";
+
+body,
+ol,
+ul,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration:none;
+	color: #fff;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+em, 
+i {
+	font-style: normal;
+}
+
+button,
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+html {
+	font-size: 625%;
+	font-family: sans-serif;
+}
+
+//重设body的背景色
+body {
+	overflow-x: hidden;
+	background-color: #fafafa;
+}
+
+
+@base-width: 640px;
+/* reseting font-size of html via media query */
+.fontHtml(@i, @base-width) {
+	@media screen and(max-width: (@base-width - 40 * @i)){
+		html {
+			font-size: 625% * (@base-width - 40 * @i) / 720;
+		}		
+	}
+}
+
+/* generating the font-size of html via loop */
+.loop(@counter) when (@counter < 9) {
+	.loop(@counter + 1);
+	.fontHtml(@counter, @base-width);
+}
+
+.loop(0);
+
+

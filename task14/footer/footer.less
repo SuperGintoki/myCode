@@ -1,0 +1,84 @@
+@charset: "utf-8";
+@import (reference) "../common/minix";
+
+.footer {
+	font-size: .14rem;
+	background-color: @green;
+	color: @white;
+
+	h6 {
+		margin-top: .4rem;
+		margin-bottom: .78rem;
+		font-size: .16rem;
+	}
+
+	&_info {
+		display: flex;
+		padding: 0 5% .2rem 5%;
+		border-bottom: .01rem solid #32c086;
+
+		> div {
+			width: 29%;
+		}
+
+		> div + div {
+			margin-left: 6%;
+		}
+	}
+
+	&_center {
+		h6 {
+			margin-bottom: .42rem;
+		}
+	}
+
+	&_right {
+		text-align: right;
+
+		h6 {
+			margin-bottom: .2rem;
+		}
+	}
+
+	@media screen and (max-width: 900px){
+		&_info {
+			flex-direction: column;
+
+			div {
+				width: 100%;
+			}
+
+			> div + div {
+				margin-top: .15rem;
+				margin-left: 0;
+			}	
+		}
+
+		&_right {
+			text-align: left;
+		}
+	}
+
+	span + span {
+		margin-left: .1rem;
+		padding-left: .1rem;
+		border-left: .02rem solid @white;
+	}
+
+	a {
+		display: inline-block;
+		margin-right: .1rem;
+		margin-bottom: .1rem;
+	    border: 1px solid transparent;
+
+	    &:hover {
+	        border-bottom: 1px solid @white;
+	    }
+	}
+
+	&_copyright {
+		padding: .15rem 5%;
+		text-align: center;
+	}
+
+}

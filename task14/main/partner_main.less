@@ -1,0 +1,124 @@
+@charset: "utf-8";
+@import "../common/minix";
+
+.main {
+	/* padding: 0 5%; */
+    
+    //banner
+	&_banner {
+		display: block; //消除font-size造成的空白
+		width: 100%;
+	}
+
+    //合作企业路径
+	&_path {
+		padding: .4rem 5%;
+		font-family: "Microsoft YaHei";
+	    font-size: .16rem;
+
+	    em {
+	    	color: @green;
+	    }
+	}
+
+	&_partner {
+		.flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 0 5% 1rem 5%;
+	}
+
+    //侧边栏
+	&_subnav {
+		margin-bottom: .5rem;
+		width: 30%;
+		border: 1px solid @greye;
+	    background-color: @white;
+
+	    h5 {
+	    	border-bottom: 1px solid #e6e6e6;
+	        height: .6rem;
+	    	font-size: .16rem;
+	    	line-height: .6rem;
+	    	text-align: center;
+	    }
+
+	    li {
+	    	margin: .1rem 0;
+			list-style: circle inside;  /* 设置项目符号 */
+			font-size: .21rem;     /* 通过设置字体大小来设置项目符号的大小 */
+			text-align: center;    /* 居中对齐 */
+			color: @orange;       /* 通过字体颜色来设置项目符号的颜色 */
+
+			a {
+				width: .7rem;       /* 限制宽度使之在居中的同时左对齐 */
+				display: inline-block;
+				margin-left: -0.1rem;    /* 调整文字和项目符号之间的距离 */
+				font-size: .14rem;       /* 设置文字大小 */
+				text-align: left;        /* 左对齐 */
+				vertical-align: middle;   /* 文字和项目符号对齐 */
+				color: @green;
+			}
+
+			&:hover {
+				list-style-type: disc;
+
+				a {
+					color: @orange;
+				}
+			}
+
+	    }
+	}
+
+	@media screen and (max-width: 992px) {
+		&_subnav {
+			width: 100%;
+		}
+	}
+
+	//主内容区
+	&_content {
+		width: 60%;
+		border: .01rem solid @greye;
+	    font-size: .14rem;
+		background-color: @white;
+		color: @grey9;
+	}
+
+	.content_head {
+		display: flex;
+		align-items: center;
+		padding: .2rem .35rem;
+		border-bottom: .01rem solid #e6e6e6;
+
+		img {
+			width: 1.2rem;
+	        height: .33rem;
+		}
+
+		p {
+			margin-left: .3rem;
+			line-height: 1.6;
+		}
+	}
+
+	.content_details {
+		padding: .2rem .35rem;
+	    line-height: 2.2;
+
+	    p{
+			margin-bottom: .3rem;
+			text-indent: 2em;
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		&_content {
+			width: 100%;
+		}
+	}
+
+
+
+}

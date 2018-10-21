@@ -1,0 +1,224 @@
+@charset: "utf-8";
+@import (reference) "../common/minix";
+
+//职业路径
+@greyed: #edf1f2;
+.main {
+	padding: 0 5% 1.5rem 5%;
+
+	&_path {
+		padding: .3rem 0;
+	    border-bottom: .01rem solid #d0d6d9;
+	    width: 100%;
+		font-family: "Microsoft YaHei";
+	    font-size: .16rem;
+
+	    em {
+	    	color: @green;
+	    }
+	}
+
+	&_career {
+		display: flex;
+		padding: .2rem 0;
+		border-bottom: .01rem solid @greyed;
+		font-size: .14rem;
+		color: @grey9;
+
+		a {
+			display: inline-block;
+			margin-left: .2rem;
+			padding: .05rem;
+			white-space: nowrap;
+	        color: @black;
+
+	        &:hover {
+	        	background-color: @green;
+	            color: @white;
+	        }
+		}
+	}
+
+	.career_dir {
+		padding: .05rem;
+		white-space: nowrap;
+	}
+}
+
+//职业介绍部分
+//普通方法实现
+.main_sorts {
+	.flex;
+
+	em {
+    	color: #f2483d;
+    	}
+
+	.sorts_career {
+		position: relative;
+		border: 1px solid @greye;
+		margin: .4rem 1.5% 0 1.5%;
+		width: 30%;
+		background-color: @white;
+
+		&:hover .career_mask{
+			display: block;
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		.sorts_career {
+			margin-left: 2.3%;
+			margin-right: 2.3%;
+			width: 45%;
+		}	
+	}
+
+	@media screen and (max-width: 768px) {
+		.sorts_career {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+
+	.career_mask {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		font-family: "Microsoft YaHei";
+		font-size: .16rem;	
+		background-color: rgba(0, 0, 0, 0.7);
+		color: @white;
+
+		div {
+			.posVert;
+			padding: 0 .4rem;
+			text-align: left;
+		}
+
+		h6 {
+			text-align: center;
+			margin-bottom: .3rem;
+			font-size: .16rem;
+		}
+	}
+
+	.career_head {
+		display: flex;
+		align-items: center;
+		.border(bottom);
+		padding: .1rem;
+		font-size: .14rem;
+	    color: #333;
+
+	    img {
+	    	width: 1.39rem;
+	    	height: 1.4rem;
+	    }
+	}
+
+	.career_intro {
+    	flex: 1;
+    	width: 0;
+    	margin-left: .16rem;
+
+    	h5 {
+    		font-size: .16rem;
+    		margin-bottom: .1rem;
+    	}
+
+    	span {
+	    	word-wrap: break-word;
+	    }
+    }
+
+    .career_content {
+    	font-size: .12rem;
+	    color: @grey9;
+    }
+
+    .career_request {
+    	position: relative;
+    	display: flex;
+    	width: 100%;
+	    .border(bottom);
+    }
+
+    .wrap {
+    	.posVert;
+    }
+
+    .career_star {
+    	width: 50%;
+    	.padding;
+
+    	img {
+    		margin-left: .1rem;
+			width: .16rem;
+			height: .16rem;
+    	}
+
+    	span {
+    		margin-left: .12rem;
+    		font-weight: 700;
+    		color: @black;
+    	}
+    }
+
+    .career_star + .career_star{
+    	.border(left);
+    }
+
+    .career_salary {
+    	position: relative;
+    	.border(bottom);
+
+    	.salary_left {
+    		.posVert;
+			width: 40%;
+			text-align: center;
+    	}
+
+    	.salary_right {
+    		margin-left: 40%;
+    		.padding;
+    		.border(left);
+    		color: @black;
+
+    		span:last-child {
+	            float: right;
+    		}
+    	}
+
+    	.salary_right + .salary_right {
+    		.border(top);
+    	}
+    }
+
+    .career_study {
+    	.padding;
+		.border(bottom);
+		font-size: .14rem;
+		font-weight: 700;
+		color: @black;
+    }
+
+    .career_notice {
+    	.padding;
+    }
+
+
+	
+}
+
+
+
+
+
+
+

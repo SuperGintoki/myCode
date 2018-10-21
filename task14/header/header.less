@@ -1,0 +1,42 @@
+@import (reference) "../common/minix";
+@charset: "utf-8";
+
+@rem25: .25rem;
+@rem24: .24rem;
+@rem-5: -.05rem;
+@rem105: 1.05rem;
+@rem34: .34rem;
+@url: "../header/images/header.png";
+
+.head{
+	padding: 0 5%;
+	font-size: .14rem;
+	line-height: .4rem;
+	background-color: @white;
+	color: @green;
+
+	&_right{
+		float: right;
+	}
+
+	//图标
+	&_wechat{
+		.iconHead;
+		margin-left: 0;
+		.addSprite(@rem25, @rem24, @url, @rem-5, @rem-5, @rem105, @rem34);
+	}
+
+	&_qq{
+		.iconHead;
+		.addSprite(@rem25, @rem24, @url, -.4rem, @rem-5, @rem105, @rem34);
+	}
+	
+	&_sina{
+		.iconHead;
+		.addSprite(@rem25, @rem24, @url, -.75rem, @rem-5,  @rem105, @rem34);
+	}
+
+
+
+}
+

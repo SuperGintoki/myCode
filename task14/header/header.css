@@ -1,0 +1,39 @@
+.head {
+  padding: 0 5%;
+  font-size: 0.14rem;
+  line-height: 0.4rem;
+  background-color: #fff;
+  color: #29b078;
+}
+.head_right {
+  float: right;
+}
+.head_wechat {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.15rem;
+  margin-left: 0;
+  width: 0.25rem;
+  height: 0.24rem;
+  background: url("../header/images/header.png") -0.05rem -0.05rem;
+  background-size: 1.05rem 0.34rem;
+}
+.head_qq {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.15rem;
+  width: 0.25rem;
+  height: 0.24rem;
+  background: url("../header/images/header.png") -0.4rem -0.05rem;
+  background-size: 1.05rem 0.34rem;
+}
+.head_sina {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.15rem;
+  width: 0.25rem;
+  height: 0.24rem;
+  background: url("../header/images/header.png") -0.75rem -0.05rem;
+  background-size: 1.05rem 0.34rem;
+}
+/*# sourceMappingURL=header.css.map */

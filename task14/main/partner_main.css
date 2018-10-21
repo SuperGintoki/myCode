@@ -1,0 +1,153 @@
+.posHoriz {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.posVert {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.posCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.iconHead {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.15rem;
+}
+.iconStrength {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shrink {
+  flex-shrink: 0;
+  margin: 0 0.15rem;
+}
+.padding {
+  padding: 0.15rem 0.1rem;
+}
+.main {
+  /* padding: 0 5%; */
+}
+.main_banner {
+  display: block;
+  width: 100%;
+}
+.main_path {
+  padding: 0.4rem 5%;
+  font-family: "Microsoft YaHei";
+  font-size: 0.16rem;
+}
+.main_path em {
+  color: #29b078;
+}
+.main_partner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 5% 1rem 5%;
+}
+.main_subnav {
+  margin-bottom: 0.5rem;
+  width: 30%;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.main_subnav h5 {
+  border-bottom: 1px solid #e6e6e6;
+  height: 0.6rem;
+  font-size: 0.16rem;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.main_subnav li {
+  margin: 0.1rem 0;
+  list-style: circle inside;
+  /* 设置项目符号 */
+  font-size: 0.21rem;
+  /* 通过设置字体大小来设置项目符号的大小 */
+  text-align: center;
+  /* 居中对齐 */
+  color: #ff650e;
+  /* 通过字体颜色来设置项目符号的颜色 */
+}
+.main_subnav li a {
+  width: 0.7rem;
+  /* 限制宽度使之在居中的同时左对齐 */
+  display: inline-block;
+  margin-left: -0.1rem;
+  /* 调整文字和项目符号之间的距离 */
+  font-size: 0.14rem;
+  /* 设置文字大小 */
+  text-align: left;
+  /* 左对齐 */
+  vertical-align: middle;
+  /* 文字和项目符号对齐 */
+  color: #29b078;
+}
+.main_subnav li:hover {
+  list-style-type: disc;
+}
+.main_subnav li:hover a {
+  color: #ff650e;
+}
+@media screen and (max-width: 992px) {
+  .main_subnav {
+    width: 100%;
+  }
+}
+.main_content {
+  width: 60%;
+  border: 0.01rem solid #eee;
+  font-size: 0.14rem;
+  background-color: #fff;
+  color: #999;
+}
+.main .content_head {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.35rem;
+  border-bottom: 0.01rem solid #e6e6e6;
+}
+.main .content_head img {
+  width: 1.2rem;
+  height: 0.33rem;
+}
+.main .content_head p {
+  margin-left: 0.3rem;
+  line-height: 1.6;
+}
+.main .content_details {
+  padding: 0.2rem 0.35rem;
+  line-height: 2.2;
+}
+.main .content_details p {
+  margin-bottom: 0.3rem;
+  text-indent: 2em;
+}
+@media screen and (max-width: 992px) {
+  .main_content {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=partner_main.css.map */
