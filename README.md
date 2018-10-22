@@ -39,4 +39,6 @@
 ### JS TASK
 1.九宫格闪光
 [demo](https://supergintoki.github.io/cssTask/js1/task1.html)
-
+</br>
+2.行走的小人
+[demo](https://supergintoki.github.io/cssTask/test/task1.html)
