@@ -38,5 +38,5 @@
 
 ### JS TASK
 1.九宫格闪光
-[demo](https://supergintoki.github.io/cssTask/jstask1/task1.html)
+[demo](https://supergintoki.github.io/cssTask/js1/task1.html)
 
