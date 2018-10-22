@@ -35,6 +35,8 @@
 14.技能树
 [demo](https://supergintoki.github.io/cssTask/task14/index.html)
 </br>
-1.shining 九宫格
+
+### JS TASK
+1.九宫格闪光
 [demo](https://supergintoki.github.io/cssTask/jstask1/task1.html)
 
