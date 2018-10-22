@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <style>
+		canvas{
+			border: 1px solid #ddd;
+			display: block;
+			margin: 100px auto;
+		}
+	</style>
+</head>
+<body>
+	<canvas width="600" height="400"></canvas>
+	<script>
+		var Person = function(ctx){
+            /*绘制工具*/
+            this.ctx = document.querySelector("canvas").getContext("2d");
+            /*图片路径*/
+            this.src = "images/run.jpg";
+            /*画布的大小*/
+            this.canvasW = this.ctx.canvas.width;
+            this.canvasH = this.ctx.canvas.height;
+            /*初始化方法*/
+            this.init();
+
+            /*想走相关参数*/
+            this.stepSize = 10;
+            /*0 向前 1 向左 2 向右 3向后 和图片的行数相关*/
+            this.direction = 0;
+
+            /*x轴方向的偏移步数*/
+            this.stepX = 0;
+            /*y轴方向的偏移步数*/
+            this.stepY = 0;
+
+        };
+
+        /*初始化行为*/
+        Person.prototype.init =function(){
+            /*1. 加载图片*/
+            var that = this;
+            this.loadImage(function(image){
+                /*图片的大小*/
+                that.imgW = image.width;
+                that.imgH = image.height;
+                /*计算人物的大小*/
+                that.personW = that.imgW / 8;
+                that.personH = that.imgH /4;
+               /* 绘制图片的起点——画布的中心*/
+                that.x0 = that.canvasW /2 - that.personW/2;
+                that.y0 = that.canvasH /2 - that.personH/2;
+                /*2. 默认绘制在画布中间位置，正面朝外*/
+                that.ctx.drawImage(image, 
+                    0, 0,  /*背景图上的定位*/                    
+                    that.personW, that.personH,/*在背景图上截取多少*/
+                    that.x0, that.y0,   /*开始绘制的坐标*/
+                    that.personW, that.personH);  /*在画布上绘制的大小*/
+
+                /*3. 能通过方向键控制任务的行走*/
+                /*绑定按键的事件*/
+                that.index = 0;
+                document.onkeydown = function(e){
+                    /*console.log(e.keyCode);*/
+                    if(e.keyCode == 40){
+                        /*前*/
+                        that.direction =0;
+                        that.stepY ++;
+                        that.drawImage(image);
+
+                    }else if(e.keyCode == 37){
+                        /*左*/
+                        that.direction =1;
+                        that.stepX --;
+                        that.drawImage(image);
+                    }else if(e.keyCode == 39){
+                        /*右*/
+                        that.direction =2;
+                        that.stepX ++;
+                        that.drawImage(image);
+                    }else if(e.keyCode == 38){
+                        /*后*/
+                        that.direction =3;
+                        that.stepY --;
+                        that.drawImage(image);
+                    }
+                }
+            })
+        }
+        
+        /*加载图片*/
+        Person.prototype.loadImage = function(callback){
+            var image = new Image();
+            image.onload = function() {
+                callback && callback(image);
+            }
+            image.src = this.src;
+        }
+
+        /*绘制图片*/
+        Person.prototype.drawImage = function(image) {
+            this.index ++;
+            /*清除画布*/
+            this.ctx.clearRect(0,0,this.canvasW, this.canvasH);
+            /*绘图*/
+            /*在雪碧图上的定位，x需要索引来确定， y需要方向来确定*/
+
+            this.ctx.drawImage(image, 
+                this.index * this.personW, this.direction*this.personH,  /*背景图上的定位*/                    
+                this.personW, this.personH,/*在背景图上截取多少*/
+                this.x0 + this.stepX * this.stepSize, this.y0 + this.stepY * this.stepSize,   /*开始绘制的坐标*/
+                this.personW, this.personH);
+
+            /*如果索引超出了 变成0*/
+            if(this.index >= 7){
+                this.index = 0;
+            }
+
+
+
+
+
+        }
+
+        new Person();
+    
+
+
+
+	</script>
+	
+</body>
+</html>
+
