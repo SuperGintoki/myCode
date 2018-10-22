@@ -1,4 +1,4 @@
-### CSS TASK:
+### CSS:
 1.九宫格
 [demo](https://supergintoki.github.io/cssTask/task1/task1.html)
 </br>
@@ -36,7 +36,7 @@
 [demo](https://supergintoki.github.io/cssTask/task14/index.html)
 </br>
 
-### JS TASK
+### JS:
 1.九宫格闪光
 [demo](https://supergintoki.github.io/cssTask/js1/task1.html)
 </br>
