@@ -1,5 +1,5 @@
 @charset: "utf-8";
-@import (reference) "../common/minix";
+@import (reference) "../../common/minix";
 
 .carousel {
 	position: relative;
@@ -9,39 +9,35 @@
 		position: relative;
 		width: 400%;  //轮播项目的大容器为四张图片的宽度
 		overflow: hidden;  //隐藏多余的图片 
-		-webkit-animation: carousel 20s ease-out infinite alternate;
-		animation: carousel 20s ease-out infinite alternate;
-
-		@keyframes carousel {
-			0%, 25% { margin-left: 0;}
-			30%, 50% { margin-left: -100%;}
-			55%, 75% { margin-left: -200%;}
-			80%, 100% { margin-left: -300%;}
-		}
 
 		li {
 			position: relative;
 			float: left;  //每张图片的容器为屏幕的宽度
 			width: 25%;
+            
+            //图片
+			.items {
+				display: block; //消除容器底部出现的空白
+				width: 100%;  //图片自适应屏幕
+			}
 		}
 	}
 
 	&_title {
-		 .posHoriz;
+		 position: absolute;
+		 left: 50%;
+		 transform: translateX(-50%);
 		 bottom: .25rem;
 		 z-index: 1;
 		 font-size: .15rem;
-		 color: @white;
-	}
-
-	.items {
-		display: block; //消除容器底部出现的空白
-		width: 100%;  //图片自适应屏幕
+		 color: #fff;
 	}
 
 	/* 轮播指标 */
 	&_indicator {
-		.posHoriz;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 		bottom: .1rem;
 		font-size: 0;
 		z-index: 1;
@@ -51,12 +47,16 @@
 			width: .1rem;
 			height: .1rem;
 			border-radius: 50%;
-			background-color: @white;
+			background-color: #fff;
 			opacity: .9;
 		}
 
 		li + li {
 			margin-left: .05rem;
+		}
+
+		.carousel_active {
+			background-color: @green;
 		}
 	}
 
@@ -70,13 +70,15 @@
 		opacity: .5;
 
 		span {
-			.posVert;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
 		}
 	}
 
 	&_left {
 		left: 0;
-		right: 50%;
+		right: 70%;
 
 		&:hover {
 			background: -moz-linear-gradient(right, #555 0%, #fff 100%);
@@ -93,7 +95,7 @@
 	}
 
 	&_right {
-		left: 50%;
+		left: 70%;
 		right: 0;
 		text-align: right;
 

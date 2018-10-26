@@ -1,0 +1,99 @@
+.carousel {
+  position: relative;
+  /* 轮播项目 */
+  /* 轮播指标 */
+  /* 轮播导航 */
+}
+.carousel_item {
+  position: relative;
+  width: 400%;
+  overflow: hidden;
+}
+.carousel_item li {
+  position: relative;
+  float: left;
+  width: 25%;
+}
+.carousel_item li .items {
+  display: block;
+  width: 100%;
+}
+.carousel_title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.25rem;
+  z-index: 1;
+  font-size: 0.15rem;
+  color: #fff;
+}
+.carousel_indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.1rem;
+  font-size: 0;
+  z-index: 1;
+}
+.carousel_indicator li {
+  display: inline-block;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.9;
+}
+.carousel_indicator li + li {
+  margin-left: 0.05rem;
+}
+.carousel_indicator .carousel_active {
+  background-color: #29b078;
+}
+.carousel > a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  font-size: 0.3rem;
+  opacity: 0.5;
+}
+.carousel > a span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel_left {
+  left: 0;
+  right: 70%;
+}
+.carousel_left:hover {
+  background: -moz-linear-gradient(right, #555 0%, #fff 100%);
+  background: -webkit-gradient(linear, right, left, color-stop(0%, #555), color-stop(100%, #fff));
+  background: -webkit-linear-gradient(right, #555 0%, #fff 100%);
+  background: -o-linear-gradient(right, #555 0%, #fff 100%);
+  background: -ms-linear-gradient(right, #555 0%, #fff 100%);
+  background: linear-gradient(to left, #555 0%, #fff 100%);
+}
+.carousel_left:hover span {
+  color: #000;
+}
+.carousel_right {
+  left: 70%;
+  right: 0;
+  text-align: right;
+}
+.carousel_right:hover {
+  background: -moz-linear-gradient(left, #555 0%, #fff 100%);
+  background: -webkit-gradient(linear, left, right, color-stop(0%, #555), color-stop(100%, #fff));
+  background: -webkit-linear-gradient(left, #555 0%, #fff 100%);
+  background: -o-linear-gradient(left, #555 0%, #fff 100%);
+  background: -ms-linear-gradient(left, #555 0%, #fff 100%);
+  background: linear-gradient(to right, #555 0%, #fff 100%);
+}
+.carousel_right:hover span {
+  color: #000;
+}
+.carousel_right span {
+  right: 0;
+}
+/*# sourceMappingURL=carousel.css.map */
