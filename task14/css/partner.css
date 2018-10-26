@@ -1,408 +1,164 @@
-body,
-ol,
-ul,
-h3,
-h4,
-h5,
-h6,
-p,
-form {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-}
-li {
-  list-style: none;
-}
-em,
-i {
-  font-style: normal;
-}
-button,
-input {
-  outline: none;
-  border: none;
-}
-button {
-  cursor: pointer;
-}
-html {
-  font-size: 625%;
-  font-family: sans-serif;
-}
-body {
-  overflow-x: hidden;
-  background-color: #fafafa;
-}
-/* reseting font-size of html via media query */
-/* generating the font-size of html via loop */
-@media screen and (max-width: 320px) {
-  html {
-    font-size: 277.77777778%;
-  }
-}
-@media screen and (max-width: 360px) {
-  html {
-    font-size: 312.5%;
-  }
-}
-@media screen and (max-width: 400px) {
-  html {
-    font-size: 347.22222222%;
-  }
-}
-@media screen and (max-width: 440px) {
-  html {
-    font-size: 381.94444444%;
-  }
-}
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 416.66666667%;
-  }
-}
-@media screen and (max-width: 520px) {
-  html {
-    font-size: 451.38888889%;
-  }
-}
-@media screen and (max-width: 560px) {
-  html {
-    font-size: 486.11111111%;
-  }
-}
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 520.83333333%;
-  }
-}
-@media screen and (max-width: 640px) {
-  html {
-    font-size: 555.55555556%;
-  }
-}
-.head {
-  padding: 0 5%;
-  font-size: 0.14rem;
-  line-height: 0.4rem;
-  background-color: #fff;
-  color: #29b078;
-}
-.head_right {
-  float: right;
-}
-.head_wechat {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.15rem;
-  margin-left: 0;
-  width: 0.25rem;
-  height: 0.24rem;
-  background: url("../header/images/header.png") -0.05rem -0.05rem;
-  background-size: 1.05rem 0.34rem;
-}
-.head_qq {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.15rem;
-  width: 0.25rem;
-  height: 0.24rem;
-  background: url("../header/images/header.png") -0.4rem -0.05rem;
-  background-size: 1.05rem 0.34rem;
-}
-.head_sina {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.15rem;
-  width: 0.25rem;
-  height: 0.24rem;
-  background: url("../header/images/header.png") -0.75rem -0.05rem;
-  background-size: 1.05rem 0.34rem;
-}
-.nav {
-  padding: 0 5%;
-  font-size: 0;
-  background-color: #29b078;
-  /* 折叠后 */
-}
-.nav_brand {
-  display: inline-block;
-  padding: 0.18rem 0;
-}
-.nav_brand img {
-  width: 1.09rem;
-  height: 0.52rem;
-}
-.nav_toggle {
-  display: none;
-}
-.nav_navbar {
-  position: relative;
-}
-.nav_navbar:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.nav_collapse {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 0.2rem;
-}
-.nav_collapse li {
-  display: inline-block;
-  padding: 0.25rem;
-  line-height: 0.35rem;
-}
-.nav_collapse li:hover {
-  border-bottom: 0.03rem solid #fff;
-}
-@media screen and (max-width: 768px) {
-  .nav label {
-    float: right;
-    margin: 0.2rem 0;
-    border: 0.1rem solid #47d197;
-    border-radius: 15%;
-    background-color: #308863;
-  }
-  .nav_toggle--icon {
-    display: inline-block;
-    margin: 0.05rem 0;
-    border-top: 0.05rem solid #47d197;
-    border-bottom: 0.05rem solid #47d197;
-    width: 0.35rem;
-    height: 0.05rem;
-    background-color: #308863;
-  }
-  .nav_collapse {
-    position: static;
-    display: none;
-    border-top: 0.01rem solid #47d197;
-    font-size: 0.17rem;
-    text-align: center;
-  }
-  .nav_collapse li {
-    display: block;
-    padding: 0;
-    height: 0.5rem;
-    line-height: 0.5rem;
-  }
-  .nav_collapse li:hover {
-    border: none;
-  }
-  .nav_collapse a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-  }
-  .nav_collapse a:hover {
-    background-color: #47d197;
-  }
-  .nav_toggle:checked ~ .nav_collapse {
-    display: block;
-    -webkit-animation: 0.3s height1;
-  }
-  @keyframes height1 {
-    0% {
-      height: 0;
-    }
-    10% {
-      height: 0.25rem;
-    }
-    25% {
-      height: 0.5rem;
-    }
-    40% {
-      height: 0.75rem;
-    }
-    50% {
-      height: 1rem;
-    }
-    60% {
-      height: 1.25rem;
-    }
-    75% {
-      height: 1.5rem;
-    }
-    90% {
-      height: 1.75rem;
-    }
-    100% {
-      height: 2rem;
-    }
-  }
-}
-.main {
-  /* padding: 0 5%; */
-}
-.main_banner {
-  display: block;
-  width: 100%;
-}
-.main_path {
-  padding: 0.4rem 5%;
-  font-family: "Microsoft YaHei";
-  font-size: 0.16rem;
-}
-.main_path em {
-  color: #29b078;
-}
-.main_partner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 5% 1rem 5%;
-}
-.main_subnav {
-  margin-bottom: 0.5rem;
-  width: 30%;
-  border: 1px solid #eee;
-  background-color: #fff;
-}
-.main_subnav h5 {
-  border-bottom: 1px solid #e6e6e6;
-  height: 0.6rem;
-  font-size: 0.16rem;
-  line-height: 0.6rem;
-  text-align: center;
-}
-.main_subnav li {
-  margin: 0.1rem 0;
-  list-style: circle inside;
-  /* 设置项目符号 */
-  font-size: 0.21rem;
-  /* 通过设置字体大小来设置项目符号的大小 */
-  text-align: center;
-  /* 居中对齐 */
-  color: #ff650e;
-  /* 通过字体颜色来设置项目符号的颜色 */
-}
-.main_subnav li a {
-  width: 0.7rem;
-  /* 限制宽度使之在居中的同时左对齐 */
-  display: inline-block;
-  margin-left: -0.1rem;
-  /* 调整文字和项目符号之间的距离 */
-  font-size: 0.14rem;
-  /* 设置文字大小 */
-  text-align: left;
-  /* 左对齐 */
-  vertical-align: middle;
-  /* 文字和项目符号对齐 */
-  color: #29b078;
-}
-.main_subnav li:hover {
-  list-style-type: disc;
-}
-.main_subnav li:hover a {
-  color: #ff650e;
-}
-@media screen and (max-width: 992px) {
-  .main_subnav {
-    width: 100%;
-  }
-}
-.main_content {
-  width: 60%;
-  border: 0.01rem solid #eee;
-  font-size: 0.14rem;
-  background-color: #fff;
-  color: #999;
-}
-.main .content_head {
-  display: flex;
-  align-items: center;
-  padding: 0.2rem 0.35rem;
-  border-bottom: 0.01rem solid #e6e6e6;
-}
-.main .content_head img {
-  width: 1.2rem;
-  height: 0.33rem;
-}
-.main .content_head p {
-  margin-left: 0.3rem;
-  line-height: 1.6;
-}
-.main .content_details {
-  padding: 0.2rem 0.35rem;
-  line-height: 2.2;
-}
-.main .content_details p {
-  margin-bottom: 0.3rem;
-  text-indent: 2em;
-}
-@media screen and (max-width: 992px) {
-  .main_content {
-    width: 100%;
-  }
-}
-.footer {
-  font-size: 0.14rem;
-  background-color: #29b078;
-  color: #fff;
-}
-.footer h6 {
-  margin-top: 0.4rem;
-  margin-bottom: 0.78rem;
-  font-size: 0.16rem;
-}
-.footer_info {
-  display: flex;
-  padding: 0 5% 0.2rem 5%;
-  border-bottom: 0.01rem solid #32c086;
-}
-.footer_info > div {
-  width: 29%;
-}
-.footer_info > div + div {
-  margin-left: 6%;
-}
-.footer_center h6 {
-  margin-bottom: 0.42rem;
-}
-.footer_right {
-  text-align: right;
-}
-.footer_right h6 {
-  margin-bottom: 0.2rem;
-}
-@media screen and (max-width: 900px) {
-  .footer_info {
-    flex-direction: column;
-  }
-  .footer_info div {
-    width: 100%;
-  }
-  .footer_info > div + div {
-    margin-top: 0.15rem;
-    margin-left: 0;
-  }
-  .footer_right {
-    text-align: left;
-  }
-}
-.footer span + span {
-  margin-left: 0.1rem;
-  padding-left: 0.1rem;
-  border-left: 0.02rem solid #fff;
-}
-.footer a {
-  display: inline-block;
-  margin-right: 0.1rem;
-  margin-bottom: 0.1rem;
-  border: 1px solid transparent;
-}
-.footer a:hover {
-  border-bottom: 1px solid #fff;
-}
-.footer_copyright {
-  padding: 0.15rem 5%;
-  text-align: center;
-}
-/*# sourceMappingURL=partner.css.map */
+body{
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei";
+	background-color: #fafafa;
+}
+
+/************* banner图开始 ****************/
+.banner{
+	width: 100%;
+	height: 2.48rem;
+	background: url(../images/banner.png) center;
+	background-size: cover;
+}
+/* .banner{
+	position: relative;
+	width: 100%;
+	height: 2.48rem;
+}
+
+是banner始终居中
+.banner img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2.48rem;
+	background-size: cover;
+} */
+
+/****************** main开始 ****************************/
+
+/* 路径设置 */
+.path{
+	margin-top: .2rem;
+	font-size: .16rem;
+}
+
+.path em{
+	font-style: normal;
+	color: #29b078;
+}
+
+/* 侧边栏设置 */
+.subnav{
+	margin-top: .2rem;
+	border: 1px solid #eee;
+	background-color: #fff;
+}
+
+/* 设置合作企业head */
+.subnav h5{
+	border-bottom: 1px solid #e6e6e6;
+	height: .6rem;
+	font-size: .16rem;
+	line-height: .6rem;
+	font-weight: 700;
+}
+
+/* 设置合作企业 */
+.subnav li{
+	width: 1.2rem;       /* 限制宽度使之在居中的同时左对齐 */
+	list-style: circle inside;  /* 设置项目符号 */
+	font-size: .21rem;     /* 通过设置字体大小来设置项目符号的大小 */
+	text-align: left;    /* 左对齐 */
+	color: #ff650e;       /* 通过字体颜色来设置项目符号的颜色 */
+}
+
+@media screen and (max-width: 485px){
+	.subnav li{
+		width: 1.8rem;
+	}
+}
+
+.subnav li > a{
+	display: inline-block;
+	margin-left: -0.1rem;    /* 调整文字和项目符号之间的距离 */
+	font-size: .14rem;       /* 设置文字大小 */
+	vertical-align: middle;   /* 文字和项目符号对齐 */
+	text-decoration: none;
+	color: #29b078;
+}
+
+/* 设置高亮显示的土豆网 */
+.subnav .highlight{
+	list-style: disc inside;
+	font-size: .23rem;
+}
+
+.subnav .highlight > a{
+	margin-left: -0.13rem;
+	color: #ff650e;
+}
+
+/* 内容区 */
+.main{
+	margin-top: .2rem;
+	margin-bottom: 1.5rem;
+	border: .01rem solid #eee;
+	font-size: .14rem;
+	background-color: #fff;
+	color: #999;
+
+}
+
+/* 内容区头部 */
+.main-head{
+	position: relative;
+	padding: 0.2rem 0.5rem;
+	line-height: 1.9;
+	border-bottom: 0.01rem solid #e6e6e6;
+}
+
+/* 土豆图片 */
+.main-head img{
+	position: absolute;
+	top: 50%;
+	left: .5rem;
+	margin-top: -0.165rem;
+	width: 1.2rem;
+	height: .33rem;
+}
+
+/* 由文字撑开父元素 */
+.main-head span{
+	display: inline-block;
+	margin-left: 1.5rem;
+}
+
+/* 主要内容 */
+.content{
+	padding: 0.35rem 0.5rem 1rem 0.5rem;
+	line-height: 2.2;
+
+}
+
+/* 段落设置 */
+.content p{
+	margin-bottom: .3rem;
+	text-indent: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

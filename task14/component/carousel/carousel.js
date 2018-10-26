@@ -84,8 +84,8 @@ function slid(fin_x, interval) {
 	var x = parseInt(getStyle(carouselItem, "marginLeft"));
 	var dist = 0;
 
-	if(carouselItem.timer) {
-		clearTimeout(carouselItem.timer);
+	if(carouselItem.move) {
+		clearTimeout(carouselItem.move);
 	}
 
 	if(x == width * fin_x) {
@@ -104,8 +104,7 @@ function slid(fin_x, interval) {
 
 	carouselItem.style.marginLeft = x + "px";
 	carouselItem1.style.marginLeft = x + "px";
-	carouselItem.timer = setTimeout("slid(" + fin_x + ","+ interval + ")", interval);
-	carouselItem1.timer = setTimeout("slid(" + fin_x + ","+ interval + ")", interval);
+	carouselItem.move = setTimeout("slid(" + fin_x + ","+ interval + ")", interval);
 
 	clearColor(dots);
 	clearColor(dots1);
