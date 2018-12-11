@@ -1,0 +1,350 @@
+/* 1. 响应式，500以下普通手机  500以上pad
+   2. 添加emoji表情库*/
+
+/* reset */
+body {
+	background-color: #ddd;
+}
+
+html {
+	font-size: 625%;
+}
+
+@media screen and (max-width: 725px){
+	html{
+		font-size: 625%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	html{
+		font-size: 417%;
+	}
+}
+
+@media screen and (max-width: 440px){
+	html{
+		font-size: 382%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	html{
+		font-size: 347%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	html{
+		font-size: 312.5%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	html{
+		font-size: 278%;
+	}
+}
+
+ul,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+/* 外框架 */
+.iphone {
+	margin: .2rem .5rem;
+	border: .02rem solid #777;
+	border-radius: .45rem;
+	height: 6rem;
+}
+
+/* 头部 */
+.iphone_head {
+	text-align: center;
+	font-size: 0;
+}
+
+/* 摄像头 */
+.iphone_head span {
+	display: inline-block;
+	margin-top: .25rem;
+	width: .15rem;
+	height: .15rem;
+	border-radius: 50%;
+	border: .01rem solid #777;
+}
+
+/* 屏幕 */
+.iphone_screen {
+	border: .03rem solid #666;
+	margin: .1rem .3rem;
+	height: 5rem;
+}
+
+/* 输入区 */
+.content {
+	overflow: auto;
+	padding: .15rem;
+	height: 4rem;
+	font-size: .2rem;
+	background-color: #eee;
+}
+
+/* 设置输出框 */
+.content li {
+	position: relative;
+	margin-bottom: .15rem;
+}
+
+/* 头像 */
+.content img {
+	position: absolute;
+	width: .45rem;
+	height: .45rem;
+	border-radius: .1rem;
+	vertical-align: middle;
+}
+
+/* 对话框 */
+.content span {
+	display: inline-block;
+	margin: 0 .6rem;
+	padding: .05rem;
+}
+
+/* 左边的头像 */
+.left img {
+	left: 0;
+}
+
+/* 左边的对话框 */
+.left span {	
+	background-color: #ccc;
+}
+
+/* 右边的对话框 */
+.right {
+	right: 0;
+	text-align: right;
+}
+
+/* 右侧的头像 */
+.right img {
+	right: 0;
+}
+
+.right span {
+	background-color: green;
+}
+
+.talk {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: .7rem;
+	border-top: .01rem solid #666;
+	font-size: 0;
+}
+
+.talk div {
+	position: relative;
+	display: inline-block;
+}
+
+.talk img {
+	width: .5rem;
+	height: .5rem;
+	border-radius: .1rem;
+	vertical-align: middle;
+}
+
+#emoji {
+	border: .01rem solid #888;
+}
+
+.talk input {
+	height: .5rem;
+	vertical-align: middle;
+	background-color: #eee;
+}
+
+#input {
+	padding-left: .1rem;
+	width: 53%;
+	border-radius: .1rem;
+	font-size: .2rem;
+	background-color: #eee;
+}
+
+#send {
+	font-size: .24rem;
+	background-color: #ddd;
+	color: #555;
+}
+
+/* 表情包 */
+#package {
+	overflow: hidden;
+	position: absolute;
+	bottom: 50px;
+	right: 60px;
+	width: 3.5rem;
+	height: 0;
+	background-color: #ccc;
+}
+
+#package img {
+	float: left;
+	margin: .05rem;
+	border: .05rem solid #ccc;
+	cursor: pointer;
+}
+
+#package img:hover {
+	border-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
